@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
     margin: 0;
     padding: 0;
@@ -5,12 +7,25 @@ body {
     font-family: "Poiret One", sans-serif;
     color: white;
     background-color: darkred;
-    height: 100rem
+    height: 100rem;
 }
 
-header, h1 {
+header,
+h1 {
     font-family: "Spirax", sans-serif;
 }
+
+h1,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+/* HEADER */
 
 header {
     background-color: rgba(50, 0, 0, 0.5);
@@ -36,4 +51,70 @@ header nav a {
 
 header nav a:hover {
     color: darkred;
+}
+
+/* SECTIONS */
+
+section {
+    height: 100vh;
+    background-color: #444;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hot {
+    background-image: url(./assets/hot.jpg);
+}
+
+#juicy {
+    background-image: url(./assets/juicy.jpg);
+}
+
+#cozy {
+    background-image: url(./assets/cozy.jpg);
+}
+
+section+section {
+    margin-top: 1rem;
+}
+
+/* SECTION CONTENT */
+
+h1 {
+    color: darkred;
+    font-size: 6rem;
+}
+
+p,
+ul {
+    padding: 1rem 3rem;
+    margin: 1rem;
+    width: 40rem;
+}
+
+p {
+    background-color: rgba(139, 0, 0, 0.8);
+    text-align: center;
+
+}
+
+section p:nth-of-type(1) {
+    margin-right: 12rem;
+}
+
+section p:nth-of-type(2) {
+    margin-left: 12rem;
+}
+
+ul {
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
 }
